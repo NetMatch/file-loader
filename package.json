@@ -24,6 +24,7 @@
     "security": "npm audit",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
     "test:coverage": "jest --collectCoverageFrom='src/**/*.js' --coverage",
     "ci:lint": "npm run lint && npm run security",
     "ci:test": "npm run test -- --runInBand",
